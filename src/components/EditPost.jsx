@@ -40,7 +40,6 @@ const EditPost = ({ post, onClose }) => {
       <div>
         <label>Head:</label>
         <input
-          type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />

@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Posts from './components/Posts';
+import Posts from './components/PostErrors';
 import AddPost from './components/AddPost';
 import EditPost from './components/EditPost';
 import './App.css';
@@ -11,10 +11,6 @@ const queryClient = new QueryClient();
 const App = () => {
   const [editingPost, setEditingPost] = useState(null);
 
-
-
-
-  
   return (
     <QueryClientProvider client={queryClient}>
       <div className="container">

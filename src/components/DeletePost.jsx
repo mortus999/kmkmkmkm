@@ -21,7 +21,10 @@ const DeletePost = ({ postId }) => {
 
 
 
+
+
   
+
   return (
     <button onClick={() => mutation.mutate()}>Delete</button>
   );
